@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transcript — Ticket</title>
+  <style>
+  :root{{--bg:#2f3136;--panel:#36393f;--muted:#b9bbbe;--text:#dcddde;--accent:#00aaff;--msg-bg: rgba(0,0,0,0.03);--max-width:980px;font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}}
+  html,body{{height:100%;margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}}
+  .wrap{{max-width:var(--max-width);margin:28px auto;padding:18px}}
+  .panel{{background:var(--panel);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}}
+  .header{{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}}
+  .title{{font-size:18px;color:#fff;font-weight:700;margin:0 0 6px 0}}
+  .meta{{color:var(--muted);font-size:13px;margin:0}}
+  .right{{color:var(--muted);font-size:13px;text-align:right}}
+  .button{{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:6px 10px;border-radius:6px;font-size:13px;cursor:pointer}}
+  .messages{{margin-top:12px}}
+  .msg{{display:flex;gap:12px;padding:10px;border-radius:10px;margin-bottom:8px;background:var(--msg-bg);align-items:flex-start}}
+  .avatar{{width:44px;height:44px;border-radius:8px;flex:0 0 44px;overflow:hidden;background:linear-gradient(180deg,#222,#111)}}
+  .avatar img{{width:44px;height:44px;object-fit:cover;display:block}}
+  .body{{flex:1;min-width:0}}
+  .author-line{{display:flex;align-items:center;gap:8px}}
+  .author-name{{font-weight:700;font-size:14px}}
+  .timestamp{{color:var(--muted);font-size:12px;margin-left:auto}}
+  .content{{margin-top:6px;line-height:1.45;color:var(--text);white-space:pre-wrap;word-break:break-word;font-size:14px}}
+  .embed{{margin-top:8px;padding:10px;border-radius:8px;background:#2a2d31;border-left:4px solid rgba(0,170,255,0.12);color:var(--muted);font-size:13px}}
+  .attachment{{margin-top:8px;padding:8px;border-radius:8px;background:#202225;border:1px solid rgba(255,255,255,0.02);font-size:13px;color:var(--muted)}}
+  a{{color:var(--accent);text-decoration:none}}
+  .staff .author-name{{color:#7289da}}
+  .role-pill{{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;margin-right:6px;margin-top:6px}}
+  .footer{{margin-top:12px;color:var(--muted);font-size:13px}}
+  @media (max-width:520px){{.header{{flex-direction:column;align-items:flex-start}}.avatar{{width:36px;height:36px;flex:0 0 36px}}.author-name{{font-size:13px}}}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel" id="panel">
+      <div class="header">
+        <div class="left">
+          <div class="title" id="channelTitle"># canal • assunto</div>
+          <div class="meta" id="channelMeta">Aberto por <strong id="ownerName"></strong> — Criado em <span id="createdAt"></span></div>
+        </div>
+        <div class="right">
+          <div id="closedBy">Fechado por: <strong>---</strong></div>
+          <div style="margin-top:8px;display:flex;gap:8px;justify-content:flex-end">
+            <button class="button" id="downloadHTML">Baixar HTML</button>
+            <button class="button" id="downloadTXT">Baixar TXT</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="messages" id="messages"></div>
+      <div class="footer" id="logInfo">Transcript gerado automaticamente</div>
+    </div>
+  </div>
+
+  <script id="DATA" type="application/json">
+  {"guild_name": "Up Roleplay", "channel_name": "ticket-anti_cheat-pastelpop10-fdgf", "subject": "ticket-anti_cheat-pastelpop10-fdgf", "owner_name": "Pastel", "created_at": "", "closed_by": "Pastel", "closed_at": "", "messages": [{"author": "UpCommunity", "author_id": 1431824329485717555, "roles": [{"name": "@everyone", "color": "#000000"}, {"name": "Up Community", "color": "#000000"}], "color": "99aab5", "avatar": "https://cdn.discordapp.com/avatars/1431824329485717555/727651cf4d6949ee78cfd41147e6fbb9.png?size=1024", "ts": "23/11/2025 22:04", "content": "&lt;@725893099167154276&gt;\n[Embed] 🔒 Anti-Cheat: fdgf\nReport de cheaters.", "attachments": [], "embeds": [{"title": "🔒 Anti-Cheat: fdgf", "description": "Report de cheaters."}]}, {"author": "Pastel", "author_id": 725893099167154276, "roles": [{"name": "@everyone", "color": "#000000"}, {"name": "STAFF | Space Roleplay 2025 ®", "color": "#ffffff"}, {"name": "𝗙𝘂𝗻𝗱𝗮𝗱𝗼𝗿", "color": "#ffff00"}], "color": "ffff00", "avatar": "https://cdn.discordapp.com/avatars/725893099167154276/3610ecdb8ae7c7d30cbee0500badd1dc.png?size=1024", "ts": "23/11/2025 22:04", "content": "ghgg", "attachments": [], "embeds": []}, {"author": "Pastel", "author_id": 725893099167154276, "roles": [{"name": "@everyone", "color": "#000000"}, {"name": "STAFF | Space Roleplay 2025 ®", "color": "#ffffff"}, {"name": "𝗙𝘂𝗻𝗱𝗮𝗱𝗼𝗿", "color": "#ffff00"}], "color": "ffff00", "avatar": "https://cdn.discordapp.com/avatars/725893099167154276/3610ecdb8ae7c7d30cbee0500badd1dc.png?size=1024", "ts": "23/11/2025 22:04", "content": "hgh", "attachments": [], "embeds": []}, {"author": "Pastel", "author_id": 725893099167154276, "roles": [{"name": "@everyone", "color": "#000000"}, {"name": "STAFF | Space Roleplay 2025 ®", "color": "#ffffff"}, {"name": "𝗙𝘂𝗻𝗱𝗮𝗱𝗼𝗿", "color": "#ffff00"}], "color": "ffff00", "avatar": "https://cdn.discordapp.com/avatars/725893099167154276/3610ecdb8ae7c7d30cbee0500badd1dc.png?size=1024", "ts": "23/11/2025 22:04", "content": "g", "attachments": [], "embeds": []}, {"author": "Pastel", "author_id": 725893099167154276, "roles": [{"name": "@everyone", "color": "#000000"}, {"name": "STAFF | Space Roleplay 2025 ®", "color": "#ffffff"}, {"name": "𝗙𝘂𝗻𝗱𝗮𝗱𝗼𝗿", "color": "#ffff00"}], "color": "ffff00", "avatar": "https://cdn.discordapp.com/avatars/725893099167154276/3610ecdb8ae7c7d30cbee0500badd1dc.png?size=1024", "ts": "23/11/2025 22:04", "content": "hg", "attachments": [], "embeds": []}, {"author": "Pastel", "author_id": 725893099167154276, "roles": [{"name": "@everyone", "color": "#000000"}, {"name": "STAFF | Space Roleplay 2025 ®", "color": "#ffffff"}, {"name": "𝗙𝘂𝗻𝗱𝗮𝗱𝗼𝗿", "color": "#ffff00"}], "color": "ffff00", "avatar": "https://cdn.discordapp.com/avatars/725893099167154276/3610ecdb8ae7c7d30cbee0500badd1dc.png?size=1024", "ts": "23/11/2025 22:04", "content": "h", "attachments": [], "embeds": []}]}
+  </script>
+
+  <script>
+    const raw = document.getElementById("DATA").textContent.trim();
+    let DATA = {};
+    try {{ DATA = JSON.parse(raw); }} catch(e){{ DATA = {{messages:[]}}; console.error("JSON inválido", e); }}
+    document.getElementById("channelTitle").textContent = `# ${DATA.channel_name || ""} • ${DATA.subject || ""}`;
+    document.getElementById("channelMeta").innerHTML = `Aberto por <strong>${escapeHtml(DATA.owner_name||"")}</strong> — Criado em <span id="createdAt">${escapeHtml(DATA.created_at||"")}</span>`;
+    document.getElementById("closedBy").innerHTML = `Fechado por: <strong>${escapeHtml(DATA.closed_by||"—")}</strong>`;
+    document.getElementById("logInfo").textContent = `Transcript gerado: ${escapeHtml(DATA.closed_at || DATA.created_at || "")}`;
+
+    function escapeHtml(s){{ if(!s) return ""; return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }}
+    function makeMsgEl(m) {{
+      const wrapper = document.createElement("div");
+      wrapper.className = "msg " + ((m.roles||[]).some(r=>r.name && /SUP|MOD|STAFF|ADMIN|STAFF/i.test(r.name)) ? "staff" : "");
+      const av = document.createElement("div"); av.className = "avatar";
+      const img = document.createElement("img"); img.src = m.avatar||""; img.alt = m.author||"avatar"; av.appendChild(img);
+      const body = document.createElement("div"); body.className = "body";
+      const authorLine = document.createElement("div"); authorLine.className = "author-line";
+      const name = document.createElement("span"); name.className = "author-name"; name.textContent = m.author||"Unknown";
+      if(m.color) name.style.color = "#" + (m.color.replace(/^#/,"")||"99aab5");
+      const ts = document.createElement("span"); ts.className = "timestamp"; ts.textContent = m.ts||"";
+      authorLine.appendChild(name); authorLine.appendChild(ts);
+      const content = document.createElement("div"); content.className = "content";
+      content.innerHTML = (m.content||"").replace(/\n/g,"<br>");
+      body.appendChild(authorLine); body.appendChild(content);
+      (m.embeds||[]).forEach(e=>{{ const d=document.createElement("div"); d.className="embed"; if(e.title) d.innerHTML+=`<strong style="color:#fff">${escapeHtml(e.title)}</strong><br>`; if(e.description) d.innerHTML+=`<div style="margin-top:6px">${escapeHtml(e.description).replace(/\n/g,"<br>")}</div>`; body.appendChild(d); }});
+      (m.attachments||[]).forEach(a=>{{ const d=document.createElement("div"); d.className="attachment"; if(a.url) d.innerHTML=`<a href="${escapeHtml(a.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(a.filename||a.url)}</a>`; else d.textContent=(a.filename||"(attachment)"); body.appendChild(d); }});
+      wrapper.appendChild(av); wrapper.appendChild(body); return wrapper;
+    }}
+
+    const msgsEl = document.getElementById("messages");
+    (DATA.messages||[]).forEach(m=>{{ try{{ msgsEl.appendChild(makeMsgEl(m)); }}catch(e){{console.error("Erro render msg", e, m);}} }});
+
+    document.getElementById("downloadTXT").addEventListener("click", ()=>{
+      const lines = [];
+      lines.push("Transcript");
+      lines.push("Assunto: " + (DATA.subject || ""));
+      lines.push("Aberto por: " + (DATA.owner_name || ""));
+      lines.push("Fechado por: " + (DATA.closed_by || ""));
+      lines.push("----");
+      (DATA.messages||[]).forEach(m=>{{ const atts=(m.attachments||[]).map(a=>a.filename||a.url||"att").join(", "); lines.push(`[${m.ts||""}] ${m.author||""}: ${m.content.replace(/<br>/g,"\n").replace(/&lt;/g,"<").replace(/&gt;/g,">")} ${atts? " [attachments: "+atts + "]":""}`); }});
+      const blob=new Blob([lines.join("\n")],{{type:"text/plain;charset=utf-8"}});
+      const url=URL.createObjectURL(blob); const a=document.createElement("a"); a.href=url; a.download=`transcript_${DATA.channel_name||"ticket"}.txt`; document.body.appendChild(a); a.click(); setTimeout(()=>{{URL.revokeObjectURL(url); a.remove();}},1500);
+    });
+
+    document.getElementById("downloadHTML").addEventListener("click", ()=>{
+      const full = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Transcript</title><style>${{document.querySelector("style").innerText}}</style></head><body>${{document.querySelector(".wrap").innerHTML}}</body></html>`;
+      const blob=new Blob([full],{{type:"text/html;charset=utf-8"}}); const url=URL.createObjectURL(blob); const a=document.createElement("a"); a.href=url; a.download=`transcript_${DATA.channel_name||"ticket"}.html`; document.body.appendChild(a); a.click(); setTimeout(()=>{{URL.revokeObjectURL(url); a.remove();}},1500);
+    });
+  </script>
+</body>
+</html>
